@@ -1,0 +1,38 @@
+[h1]Weapon Augments[/h1]
+
+Weapon Augments is another weapon-upgrading mod by yours truly (BlockCrusader); this time featuring a variety of effects - called Augments - which you can attach to weapons to empower them.
+
+[h2]Applying Augments:[/h2]
+[list]
+    [*]Getting Augments on your gear is a somewhat involved process, and one that involves RNG;
+    [*]You will find that enemies occassionally drop Shards of Power, these special items are the base for Augment-making processes
+    [*]Combine 4 Shard of Power of the same type at a furnace in order to craft a Crystal of Power
+    [*]Crystals of Power act like grab/loot bags; right click on one from the inventory and you'll get an Augment Jewel
+    [*]There are many different Augments, each with a corresponding Jewel. You won't know what you have until you use the Crystal(s)
+    [*]Finally, Augment Jewels are used to apply their respective Augment; hold the desired weapon and right click on the Augment Jewel
+    [*]If the item is compatible and the process succeeds, you'll hear a sound effect and the Jewel will be consumed
+[/list]
+
+[h2]Augment Variety:[/h2]
+[list]
+    [*]Shards of Power, Crystals of Power, Augment Jewels, and Augments themselves all come in five tiers
+    [*]These are (Ordered by rarity/strength); Basic, Uncommon, Rare, Epic, and Ultimate
+    [*]There are 60 distinct Augment types, though you'll find many are exclusive to higher tiers
+    [*]Overall, the total amount of Augment type-tier combinations is 220
+[/list]
+
+[h2]Augment Limits:[/h2]
+[list]
+    [*]Keep in mind that not all Augment types work with all weapons
+    [*]By default, a weapon can have just one Augment at a time. However, this can raised up to a max of 5 via. config
+    [*]Any Augment(s) can be removed from a weapon using a Void Shard, obtained rarely from enemies or by shimmering Basic Shards of Power
+    [*]Void Shards remove all Augments at once, but may salvage a few Shards based on the Augments voided
+[/list]
+
+[h2]Disclaimers/Final Notes:[/h2]
+[list]
+    [*]You'll find that most Augments make a small/neglible difference; this is to reduce the impact of Augments - which are generally entirley benfical - on balancing. Regardless, they should add a litte spice to your gear.
+    [*][b]Due to a tML bug, Minions and Sentries don't benefit from extra damage when they should! To fix this, try the mod 'Minion ModifyWeaponDamage Patch'[/b]
+[/list]
+
+[b]Please first read the pinned discussion 'FAQ Thread: Compatibility, Known Issues/Bug Reports, Roadmap & More' if you have any questions![/b]
