@@ -13,6 +13,7 @@ CommonItemTooltip: {
 		To use, select the desired weapon in your hotbar, and <right> on the Jewel
 		On success, the Jewel will be consumed
 		'''
+	Selected: "Selected gear: "
 	RestrictionKB: Can't be applied to weapons with no knockback
 	RestrictionAtkSpd: Can only be applied to weapons which can have their attack speed modified
 	RestrictionScale: Can only be applied to whips, and melee weapons which can have their size modified
