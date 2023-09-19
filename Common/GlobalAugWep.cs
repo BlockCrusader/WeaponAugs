@@ -1055,13 +1055,13 @@ namespace WeaponAugs.Common
 			}
 
 			string titleLine = Main.keyState.PressingShift() ? 
-				Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListTitle") : 
-				Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListShiftTip");
+				Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListTitle") : 
+				Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListShiftTip");
 			tooltips.Add(new TooltipLine(Mod, "AugListTitle", titleLine));
 			if(Augments.Count > AugTiers.Count)
             {
 				tooltips.Add(new TooltipLine(Mod, "AugListError", 
-					Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListError")) { OverrideColor = Color.Red });
+					Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListError")) { OverrideColor = Color.Red });
 				return;
 			}
 			for(int i = 0; i < Augments.Count; i++)
@@ -1079,8 +1079,8 @@ namespace WeaponAugs.Common
 						if (i >= CheckActiveAugs(item))
 						{
                             augmentLine = Main.keyState.PressingShift() ?
-                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListDisabledDesc") :
-                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListDisabledTitle");
+                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListDisabledDesc") :
+                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListDisabledTitle");
 							tooltipColor = Colors.RarityTrash;
 						}
 
@@ -1456,19 +1456,19 @@ namespace WeaponAugs.Common
 					switch (tier)
 					{
 						default:
-							pValOverride = AugPowerArchive.IgniteBas;
+							pValOverride = Language.GetTextValue("BuffName.OnFire");
 							break;
 						case AugTier.Uncommon:
-							pValOverride = AugPowerArchive.IgniteUnc;
+							pValOverride = Language.GetTextValue("BuffName.Frostburn");
 							break;
 						case AugTier.Rare:
-							pValOverride = AugPowerArchive.IgniteRar;
+							pValOverride = Language.GetTextValue("BuffName.Shadowflame");
 							break;
 						case AugTier.Epic:
-							pValOverride = AugPowerArchive.IgniteEpi;
+							pValOverride = Language.GetTextValue("BuffName.CursedInferno");
 							break;
 						case AugTier.Ultimate:
-							pValOverride = AugPowerArchive.IgniteUlt;
+							pValOverride = Language.GetTextValue("Mods.WeaponAugs.Buffs.RunicBlaze.DisplayName");
 							break;
 					}
 					break;

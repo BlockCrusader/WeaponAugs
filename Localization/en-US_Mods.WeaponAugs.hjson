@@ -1,4 +1,3 @@
-
 # NOTICE FOR LOCALIZERS: It is suggest you DON'T attempt to localize Agument names or Augment rarity/tier names since these are currently hardcoded for each of the 220 unique Augments...
 # This probably shouldn't cause a huge problem amongst those speaking other languages since it is still possible to distinguish the Augments from each other, even if the naming doesn't carry its meaning
 
@@ -6,7 +5,7 @@ CommonItemTooltip: {
 	AugListTitle: Augments:
 	AugListShiftTip: Augments: (Hold shift for more info)
 	AugListError: ERROR: Augment(s) not synced to tier(s)!?
-	AugListDisabledTitle: " (Disabled)" 
+	AugListDisabledTitle: " (Disabled)"
 	AugListDisabledDesc: ": Disabled; exceeds current augment limit!"
 	AugJewelMain:
 		'''
