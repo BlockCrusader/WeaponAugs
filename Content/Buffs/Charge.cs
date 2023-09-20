@@ -24,7 +24,7 @@ namespace WeaponAugs.Content.Buffs
 		public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
         {
 			float displayValue = (float)Math.Round(stackTracker, 2);
-			tip = Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.SuperchargeBuffDesc").FormatWith(displayValue);
+			tip = Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.SuperchargeBuffDesc").FormatWith(displayValue);
 		}
     }
 }

@@ -1055,13 +1055,13 @@ namespace WeaponAugs.Common
 			}
 
 			string titleLine = Main.keyState.PressingShift() ? 
-				Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListTitle") : 
-				Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListShiftTip");
+				Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListTitle") : 
+				Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListShiftTip");
 			tooltips.Add(new TooltipLine(Mod, "AugListTitle", titleLine));
 			if(Augments.Count > AugTiers.Count)
             {
 				tooltips.Add(new TooltipLine(Mod, "AugListError", 
-					Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListError")) { OverrideColor = Color.Red });
+					Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListError")) { OverrideColor = Color.Red });
 				return;
 			}
 			for(int i = 0; i < Augments.Count; i++)
@@ -1079,8 +1079,8 @@ namespace WeaponAugs.Common
 						if (i >= CheckActiveAugs(item))
 						{
                             augmentLine = Main.keyState.PressingShift() ?
-                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListDisabledDesc") :
-                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemtooltip.AugListDisabledTitle");
+                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListDisabledDesc") :
+                                augName + Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.AugListDisabledTitle");
 							tooltipColor = Colors.RarityTrash;
 						}
 
@@ -1124,9 +1124,11 @@ namespace WeaponAugs.Common
         {
 			string augTier = "";
 			string augName = "";
+			string augPath = "";
 			float placeholderVal = -1;
 			string pValOverride = "";
 			string localizationPath = "Mods.WeaponAugs.CommonItemTooltip.AugDesc";
+			string localizationNamePath = "Mods.WeaponAugs.Items.";
 			bool noneTypeError = false;
 			LocalizedText augLocalDesc;
 			augDesc = "";
@@ -1135,19 +1137,19 @@ namespace WeaponAugs.Common
 			switch (tier)
 			{
 				case AugTier.Basic:
-					augTier = " (Basic)";
+					augTier = Language.GetTextValue("Mods.WeaponAugs.Items.Basic");
 					break;
 				case AugTier.Uncommon:
-					augTier = " (Uncommon)";
+					augTier = Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 					break;
 				case AugTier.Rare:
-					augTier = " (Rare)";
+					augTier = Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 					break;
 				case AugTier.Epic:
-					augTier = " (Epic)";
+					augTier = Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 					break;
 				case AugTier.Ultimate:
-					augTier = " (Ultimate)";
+					augTier = Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 					break;
 				default:
 					noneTypeError = true;
@@ -1158,7 +1160,9 @@ namespace WeaponAugs.Common
             {
 				// Types 1-20 have all 5 tiers
 				case AugType.Might:
-					augName = "Might";
+					augPath = "Might";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1179,7 +1183,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Force:
-					augName = "Force";
+					augPath = "Force";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1200,7 +1206,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Precision:
-					augName = "Precision";
+					augPath = "Precision";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1221,7 +1229,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Rush:
-					augName = "Rush";
+					augPath = "Rush";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1242,7 +1252,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Armorbane:
-					augName = "Armorbane";
+					augPath = "Armorbane";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1263,7 +1275,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Titanreach:
-					augName = "Titanreach";
+					augPath = "Titanreach";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1284,7 +1298,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Dire:
-					augName = "Dire";
+					augPath = "Dire";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1305,7 +1321,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Heartsurge:
-					augName = "Heartsurge";
+					augPath = "Heartsurge";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1326,7 +1344,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Arcana:
-					augName = "Arcana";
+					augPath = "Arcana";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1347,7 +1367,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Frenzy:
-					augName = "Frenzy";
+					augPath = "Frenzy";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1368,7 +1390,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Battlelust:
-					augName = "Battlelust";
+					augPath = "Battlelust";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1389,7 +1413,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Conservation:
-					augName = "Conservation";
+					augPath = "Conservation";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1410,7 +1436,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Overflow:
-					augName = "Overflow";
+					augPath = "Overflow";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1431,7 +1459,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Fortune:
-					augName = "Fortune";
+					augPath = "Fortune";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1452,28 +1482,32 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Ignite:
-					augName = "Ignite";
+					augPath = "Ignite";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
-							pValOverride = AugPowerArchive.IgniteBas;
+							pValOverride = Language.GetTextValue("BuffName.OnFire");
 							break;
 						case AugTier.Uncommon:
-							pValOverride = AugPowerArchive.IgniteUnc;
+							pValOverride = Language.GetTextValue("BuffName.Frostburn");
 							break;
 						case AugTier.Rare:
-							pValOverride = AugPowerArchive.IgniteRar;
+							pValOverride = Language.GetTextValue("BuffName.Shadowflame");
 							break;
 						case AugTier.Epic:
-							pValOverride = AugPowerArchive.IgniteEpi;
+							pValOverride = Language.GetTextValue("BuffName.CursedInferno");
 							break;
 						case AugTier.Ultimate:
-							pValOverride = AugPowerArchive.IgniteUlt;
+							pValOverride = Language.GetTextValue("Mods.WeaponAugs.Buffs.RunicBlaze.DisplayName");
 							break;
 					}
 					break;
 				case AugType.Taint:
-					augName = "Taint";
+					augPath = "Taint";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1494,7 +1528,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Ballistic:
-					augName = "Ballistic";
+					augPath = "Ballistic";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1515,7 +1551,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Finisher:
-					augName = "Finisher";
+					augPath = "Finisher";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1536,7 +1574,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Unleash:
-					augName = "Unleash";
+					augPath = "Unleash";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1557,7 +1597,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Combobreak:
-					augName = "Combobreak";
+					augPath = "Combobreak";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1579,7 +1621,9 @@ namespace WeaponAugs.Common
 					break;
 				// 21-36 have all tiers but Basic
 				case AugType.Deathecho:
-					augName = "Deathecho";
+					augPath = "Deathecho";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1597,7 +1641,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Lightweight:
-					augName = "Lightweight";
+					augPath = "Lightweight";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1615,7 +1661,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Revitalize:
-					augName = "Revitalize";
+					augPath = "Revitalize";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1633,7 +1681,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Megastrike:
-					augName = "Megastrike";
+					augPath = "Megastrike";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1651,7 +1701,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Sturdy:
-					augName = "Sturdy";
+					augPath = "Sturdy";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1669,7 +1721,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Barrage:
-					augName = "Barrage";
+					augPath = "Barrage";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1687,7 +1741,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Diversion:
-					augName = "Diversion";
+					augPath = "Diversion";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1705,7 +1761,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Wildstrike:
-					augName = "Wildstrike";
+					augPath = "Wildstrike";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1723,7 +1781,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Uplifting:
-					augName = "Uplifting";
+					augPath = "Uplifting";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1741,7 +1801,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Luck:
-					augName = "Luck";
+					augPath = "Luck";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1759,7 +1821,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Rend:
-					augName = "Rend";
+					augPath = "Rend";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1777,7 +1841,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Deathshroud:
-					augName = "Deathshroud";
+					augPath = "Deathshroud";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1795,7 +1861,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Ward:
-					augName = "Ward";
+					augPath = "Ward";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1813,7 +1881,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Minicrit:
-					augName = "Minicrit";
+					augPath = "Minicrit";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1831,7 +1901,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Siphon:
-					augName = "Siphon";
+					augPath = "Siphon";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1849,7 +1921,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Paincycle:
-					augName = "Paincycle";
+					augPath = "Paincycle";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1868,7 +1942,9 @@ namespace WeaponAugs.Common
 					break;
 				// 37-48 have Rare, Epic, and Ultimate tiers
 				case AugType.Rally:
-					augName = "Rally";
+					augPath = "Rally";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1883,7 +1959,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Blast:
-					augName = "Blast";
+					augPath = "Blast";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1895,7 +1973,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Superluck:
-					augName = "Superluck";
+					augPath = "Superluck";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1910,7 +1990,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Kingslayer:
-					augName = "Kingslayer";
+					augPath = "Kingslayer";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1925,7 +2007,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Hypercrit:
-					augName = "Hypercrit";
+					augPath = "Hypercrit";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1940,7 +2024,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Unstable:
-					augName = "Unstable";
+					augPath = "Unstable";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1955,7 +2041,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Vigor:
-					augName = "Vigor";
+					augPath = "Vigor";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1970,7 +2058,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Determination:
-					augName = "Determination";
+					augPath = "Determination";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -1985,7 +2075,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Breaker:
-					augName = "Breaker";
+					augPath = "Breaker";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2000,7 +2092,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Reaping:
-					augName = "Reaping";
+					augPath = "Reaping";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2015,7 +2109,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Overdrive:
-					augName = "Overdrive";
+					augPath = "Overdrive";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2030,7 +2126,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Ultracutter:
-					augName = "Ultracutter";
+					augPath = "Ultracutter";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2046,7 +2144,9 @@ namespace WeaponAugs.Common
 					break;
 				// 49-56 have only Epic and Ultimate tiers
 				case AugType.Voidic:
-					augName = "Voidic";
+					augPath = "Voidic";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2058,7 +2158,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Committed:
-					augName = "Committed";
+					augPath = "Committed";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2070,7 +2172,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Lifeleech:
-					augName = "Lifeleech";
+					augPath = "Lifeleech";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2082,7 +2186,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Radiance:
-					augName = "Radiance";
+					augPath = "Radiance";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2094,7 +2200,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Relentless:
-					augName = "Relentless";
+					augPath = "Relentless";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2106,7 +2214,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Momentum:
-					augName = "Momentum";
+					augPath = "Momentum";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2118,7 +2228,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Collateral:
-					augName = "Collateral";
+					augPath = "Collateral";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2130,7 +2242,9 @@ namespace WeaponAugs.Common
 					}
 					break;
 				case AugType.Supercharge:
-					augName = "Supercharge";
+					augPath = "Supercharge";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					switch (tier)
 					{
 						default:
@@ -2143,19 +2257,27 @@ namespace WeaponAugs.Common
 					break;
 				// 57-60 are Ultimate exclusive
 				case AugType.Execution:
-					augName = "Execution";
+					augPath = "Execution";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					placeholderVal = AugPowerArchive.ExecutionUlt;
 					break;
 				case AugType.Resurgence:
-					augName = "Resurgence";
+					augPath = "Resurgence";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					placeholderVal = AugPowerArchive.ResurgenceUlt;
 					break;
 				case AugType.Runic:
-					augName = "Runic";
+					augPath = "Runic";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					placeholderVal = AugPowerArchive.RunicUlt;
 					break;
 				case AugType.Powertheft:
-					augName = "Powertheft";
+					augPath = "Powertheft";
+					localizationNamePath += augPath;
+					augName = (string)Language.GetOrRegister(localizationNamePath);
 					placeholderVal = AugPowerArchive.PowertheftUlt;
 					break;
 				case AugType.None:
@@ -2172,7 +2294,7 @@ namespace WeaponAugs.Common
             }
 
 			augTitle = augName + augTier;
-			localizationPath += augName;
+			localizationPath += augPath;
 			if (localizationPath == "Mods.WeaponAugs.CommonItemTooltip.AugDesc")
             {
 				return false;

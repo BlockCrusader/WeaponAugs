@@ -1,4 +1,3 @@
-
 # NOTICE FOR LOCALIZERS: It is suggest you DON'T attempt to localize Agument names or Augment rarity/tier names since these are currently hardcoded for each of the 220 unique Augments...
 # This probably shouldn't cause a huge problem amongst those speaking other languages since it is still possible to distinguish the Augments from each other, even if the naming doesn't carry its meaning
 
@@ -6,7 +5,7 @@ CommonItemTooltip: {
 	AugListTitle: Augments:
 	AugListShiftTip: Augments: (Hold shift for more info)
 	AugListError: ERROR: Augment(s) not synced to tier(s)!?
-	AugListDisabledTitle: " (Disabled)" 
+	AugListDisabledTitle: " (Disabled)"
 	AugListDisabledDesc: ": Disabled; exceeds current augment limit!"
 	AugJewelMain:
 		'''
@@ -14,6 +13,7 @@ CommonItemTooltip: {
 		To use, select the desired weapon in your hotbar, and <right> on the Jewel
 		On success, the Jewel will be consumed
 		'''
+	Selected: "Selected gear: "
 	RestrictionKB: Can't be applied to weapons with no knockback
 	RestrictionAtkSpd: Can only be applied to weapons which can have their attack speed modified
 	RestrictionScale: Can only be applied to whips, and melee weapons which can have their size modified
@@ -221,9 +221,16 @@ CommonItemTooltip: {
 
 Items: {
 	# Etc. items
-	
+	Crystal: Crystal of Power
+	Shard: Shard of Power
+	Basic: " (Basic)"
+	Uncommon: " (Uncommon)"
+	Rare: " (Rare)"
+	Epic: " (Epic)"
+	Ultimate: " (Ultimate)"
+
 	PowerCrystalUnc: {
-		DisplayName: Crystal of Power (Uncommon)
+		DisplayName: "{$Items.Crystal}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerCrystalTip}
@@ -232,7 +239,7 @@ Items: {
 	}
 
 	PowerCrystalUlt: {
-		DisplayName: Crystal of Power (Ultimate)
+		DisplayName: "{$Items.Crystal}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerCrystalTip}
@@ -241,7 +248,7 @@ Items: {
 	}
 
 	PowerCrystalRar: {
-		DisplayName: Crystal of Power (Rare)
+		DisplayName: "{$Items.Crystal}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerCrystalTip}
@@ -259,7 +266,7 @@ Items: {
 	}
 
 	PowerCrystalEpi: {
-		DisplayName: Crystal of Power (Epic)
+		DisplayName: "{$Items.Crystal}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerCrystalTip}
@@ -268,7 +275,7 @@ Items: {
 	}
 
 	PowerCrystalBas: {
-		DisplayName: Crystal of Power (Basic)
+		DisplayName: "{$Items.Crystal}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerCrystalTip}
@@ -277,7 +284,7 @@ Items: {
 	}
 
 	PowerShardBas: {
-		DisplayName: Shard of Power (Basic)
+		DisplayName: "{$Items.Shard}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerShardTip}
@@ -286,7 +293,7 @@ Items: {
 	}
 
 	PowerShardEpi: {
-		DisplayName: Shard of Power (Epic)
+		DisplayName: "{$Items.Shard}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerShardTip}
@@ -295,7 +302,7 @@ Items: {
 	}
 
 	PowerShardRar: {
-		DisplayName: Shard of Power (Rare)
+		DisplayName: "{$Items.Shard}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerShardTip}
@@ -304,7 +311,7 @@ Items: {
 	}
 
 	PowerShardUlt: {
-		DisplayName: Shard of Power (Ultimate)
+		DisplayName: "{$Items.Shard}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerShardTip}
@@ -313,7 +320,7 @@ Items: {
 	}
 
 	PowerShardUnc: {
-		DisplayName: Shard of Power (Uncommon)
+		DisplayName: "{$Items.Shard}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.PowerShardTip}
@@ -334,9 +341,70 @@ Items: {
 	}
 
 	# Basic Aug Jewls
-	
+	Jewel: "Augment Jewel: "
+	Might: Might
+	Arcana: Arcana
+	Armorbane: Armorbane
+	Ballistic: Ballistic
+	Battlelust: Battlelust
+	Combobreak: Combobreak
+	Conservation: Conservation
+	Dire: Dire
+	Finisher: Finisher
+	Force: Force
+	Fortune: Fortune
+	Frenzy: Frenzy
+	Heartsurge: Heartsurge
+	Ignite: Ignite
+	Overflow: Overflow
+	Precision: Precision
+	Rush: Rush
+	Taint: Taint
+	Titanreach: Titanreach
+	Unleash: Unleash
+	Deathecho: Deathecho
+	Barrage: Barrage
+	Deathshroud: Deathshroud
+	Diversion: Diversion
+	Lightweight: Lightweight
+	Luck: Luck
+	Megastrike: Megastrike
+	Minicrit: Minicrit
+	Paincycle: Paincycle
+	Rend: Rend
+	Revitalize: Revitalize
+	Siphon: Siphon
+	Sturdy: Sturdy
+	Uplifting: Uplifting
+	Ward: Ward
+	Wildstrike: Wildstrike
+	Blast: Blast
+	Breaker: Breaker
+	Determination: Determination
+	Hypercrit: Hypercrit
+	Kingslayer: Kingslayer
+	Overdrive: Overdrive
+	Rally: Rally
+	Reaping: Reaping
+	Superluck: Superluck
+	Ultracutter: Ultracutter
+	Unstable: Unstable
+	Vigor: Vigor
+	Collateral: Collateral
+	Committed: Committed
+	Lifeleech: Lifeleech
+	Momentum: Momentum
+	Radiance: Radiance
+	Relentless: Relentless
+	Supercharge: Supercharge
+	Voidic: Voidic
+	Runic: Runic
+	Resurgence: Resurgence
+	Powertheft: Powertheft
+	Execution: Execution
+
 	MightJewelBas: {
-		DisplayName: Augment Jewel: Might (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Might}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -345,7 +413,7 @@ Items: {
 	}
 
 	MightJewelEpi: {
-		DisplayName: Augment Jewel: Might (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Might}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -354,7 +422,7 @@ Items: {
 	}
 
 	MightJewelRar: {
-		DisplayName: Augment Jewel: Might (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Might}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -363,7 +431,7 @@ Items: {
 	}
 
 	MightJewelUlt: {
-		DisplayName: Augment Jewel: Might (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Might}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -372,7 +440,7 @@ Items: {
 	}
 
 	MightJewelUnc: {
-		DisplayName: Augment Jewel: Might (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Might}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -381,7 +449,7 @@ Items: {
 	}
 
 	ArcanaJewelUnc: {
-		DisplayName: Augment Jewel: Arcana (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Arcana}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -391,7 +459,7 @@ Items: {
 	}
 
 	ArcanaJewelUlt: {
-		DisplayName: Augment Jewel: Arcana (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Arcana}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -401,7 +469,7 @@ Items: {
 	}
 
 	ArcanaJewelRar: {
-		DisplayName: Augment Jewel: Arcana (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Arcana}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -411,7 +479,7 @@ Items: {
 	}
 
 	ArcanaJewelEpi: {
-		DisplayName: Augment Jewel: Arcana (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Arcana}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -421,7 +489,7 @@ Items: {
 	}
 
 	ArcanaJewelBas: {
-		DisplayName: Augment Jewel: Arcana (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Arcana}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -431,7 +499,7 @@ Items: {
 	}
 
 	ArmorbaneJewelBas: {
-		DisplayName: Augment Jewel: Armorbane (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Armorbane}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -440,7 +508,7 @@ Items: {
 	}
 
 	ArmorbaneJewelEpi: {
-		DisplayName: Augment Jewel: Armorbane (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Armorbane}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -449,7 +517,7 @@ Items: {
 	}
 
 	ArmorbaneJewelRar: {
-		DisplayName: Augment Jewel: Armorbane (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Armorbane}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -458,7 +526,7 @@ Items: {
 	}
 
 	ArmorbaneJewelUlt: {
-		DisplayName: Augment Jewel: Armorbane (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Armorbane}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -467,7 +535,7 @@ Items: {
 	}
 
 	ArmorbaneJewelUnc: {
-		DisplayName: Augment Jewel: Armorbane (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Armorbane}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -476,7 +544,7 @@ Items: {
 	}
 
 	BallisticJewelBas: {
-		DisplayName: Augment Jewel: Ballistic (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Ballistic}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -486,7 +554,7 @@ Items: {
 	}
 
 	BallisticJewelEpi: {
-		DisplayName: Augment Jewel: Ballistic (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Ballistic}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -496,7 +564,7 @@ Items: {
 	}
 
 	BallisticJewelRar: {
-		DisplayName: Augment Jewel: Ballistic (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Ballistic}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -506,7 +574,7 @@ Items: {
 	}
 
 	BallisticJewelUlt: {
-		DisplayName: Augment Jewel: Ballistic (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Ballistic}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -516,7 +584,7 @@ Items: {
 	}
 
 	BallisticJewelUnc: {
-		DisplayName: Augment Jewel: Ballistic (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Ballistic}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -526,7 +594,7 @@ Items: {
 	}
 
 	BattlelustJewelBas: {
-		DisplayName: Augment Jewel: Battlelust (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Battlelust}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -536,7 +604,7 @@ Items: {
 	}
 
 	BattlelustJewelEpi: {
-		DisplayName: Augment Jewel: Battlelust (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Battlelust}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -546,7 +614,7 @@ Items: {
 	}
 
 	BattlelustJewelRar: {
-		DisplayName: Augment Jewel: Battlelust (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Battlelust}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -556,7 +624,7 @@ Items: {
 	}
 
 	BattlelustJewelUlt: {
-		DisplayName: Augment Jewel: Battlelust (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Battlelust}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -566,7 +634,7 @@ Items: {
 	}
 
 	BattlelustJewelUnc: {
-		DisplayName: Augment Jewel: Battlelust (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Battlelust}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -576,7 +644,7 @@ Items: {
 	}
 
 	CombobreakJewelBas: {
-		DisplayName: Augment Jewel: Combobreak (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Combobreak}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -585,7 +653,7 @@ Items: {
 	}
 
 	CombobreakJewelEpi: {
-		DisplayName: Augment Jewel: Combobreak (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Combobreak}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -594,7 +662,7 @@ Items: {
 	}
 
 	CombobreakJewelRar: {
-		DisplayName: Augment Jewel: Combobreak (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Combobreak}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -603,7 +671,7 @@ Items: {
 	}
 
 	CombobreakJewelUlt: {
-		DisplayName: Augment Jewel: Combobreak (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Combobreak}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -612,7 +680,7 @@ Items: {
 	}
 
 	CombobreakJewelUnc: {
-		DisplayName: Augment Jewel: Combobreak (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Combobreak}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -621,7 +689,7 @@ Items: {
 	}
 
 	ConservationJewelBas: {
-		DisplayName: Augment Jewel: Conservation (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Conservation}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -631,7 +699,7 @@ Items: {
 	}
 
 	ConservationJewelEpi: {
-		DisplayName: Augment Jewel: Conservation (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Conservation}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -641,7 +709,7 @@ Items: {
 	}
 
 	ConservationJewelRar: {
-		DisplayName: Augment Jewel: Conservation (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Conservation}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -651,7 +719,7 @@ Items: {
 	}
 
 	ConservationJewelUlt: {
-		DisplayName: Augment Jewel: Conservation (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Conservation}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -661,7 +729,7 @@ Items: {
 	}
 
 	ConservationJewelUnc: {
-		DisplayName: Augment Jewel: Conservation (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Conservation}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -671,7 +739,7 @@ Items: {
 	}
 
 	DireJewelBas: {
-		DisplayName: Augment Jewel: Dire (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Dire}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -681,7 +749,7 @@ Items: {
 	}
 
 	DireJewelEpi: {
-		DisplayName: Augment Jewel: Dire (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Dire}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -691,7 +759,7 @@ Items: {
 	}
 
 	DireJewelRar: {
-		DisplayName: Augment Jewel: Dire (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Dire}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -701,7 +769,7 @@ Items: {
 	}
 
 	DireJewelUlt: {
-		DisplayName: Augment Jewel: Dire (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Dire}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -711,7 +779,7 @@ Items: {
 	}
 
 	DireJewelUnc: {
-		DisplayName: Augment Jewel: Dire (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Dire}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -721,7 +789,7 @@ Items: {
 	}
 
 	FinisherJewelBas: {
-		DisplayName: Augment Jewel: Finisher (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Finisher}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -730,7 +798,7 @@ Items: {
 	}
 
 	FinisherJewelEpi: {
-		DisplayName: Augment Jewel: Finisher (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Finisher}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -739,7 +807,7 @@ Items: {
 	}
 
 	FinisherJewelRar: {
-		DisplayName: Augment Jewel: Finisher (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Finisher}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -748,7 +816,7 @@ Items: {
 	}
 
 	FinisherJewelUlt: {
-		DisplayName: Augment Jewel: Finisher (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Finisher}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -757,7 +825,7 @@ Items: {
 	}
 
 	FinisherJewelUnc: {
-		DisplayName: Augment Jewel: Finisher (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Finisher}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -766,7 +834,7 @@ Items: {
 	}
 
 	ForceJewelBas: {
-		DisplayName: Augment Jewel: Force (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Force}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -776,7 +844,7 @@ Items: {
 	}
 
 	ForceJewelEpi: {
-		DisplayName: Augment Jewel: Force (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Force}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -786,7 +854,7 @@ Items: {
 	}
 
 	ForceJewelRar: {
-		DisplayName: Augment Jewel: Force (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Force}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -796,7 +864,7 @@ Items: {
 	}
 
 	ForceJewelUlt: {
-		DisplayName: Augment Jewel: Force (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Force}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -806,7 +874,7 @@ Items: {
 	}
 
 	ForceJewelUnc: {
-		DisplayName: Augment Jewel: Force (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Force}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -816,7 +884,7 @@ Items: {
 	}
 
 	FortuneJewelBas: {
-		DisplayName: Augment Jewel: Fortune (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Fortune}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -825,7 +893,7 @@ Items: {
 	}
 
 	FortuneJewelEpi: {
-		DisplayName: Augment Jewel: Fortune (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Fortune}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -834,7 +902,7 @@ Items: {
 	}
 
 	FortuneJewelRar: {
-		DisplayName: Augment Jewel: Fortune (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Fortune}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -843,7 +911,7 @@ Items: {
 	}
 
 	FortuneJewelUlt: {
-		DisplayName: Augment Jewel: Fortune (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Fortune}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -852,7 +920,7 @@ Items: {
 	}
 
 	FortuneJewelUnc: {
-		DisplayName: Augment Jewel: Fortune (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Fortune}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -861,7 +929,7 @@ Items: {
 	}
 
 	FrenzyJewelBas: {
-		DisplayName: Augment Jewel: Frenzy (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Frenzy}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -872,7 +940,7 @@ Items: {
 	}
 
 	FrenzyJewelEpi: {
-		DisplayName: Augment Jewel: Frenzy (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Frenzy}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -883,7 +951,7 @@ Items: {
 	}
 
 	FrenzyJewelRar: {
-		DisplayName: Augment Jewel: Frenzy (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Frenzy}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -894,7 +962,7 @@ Items: {
 	}
 
 	FrenzyJewelUlt: {
-		DisplayName: Augment Jewel: Frenzy (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Frenzy}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -905,7 +973,7 @@ Items: {
 	}
 
 	FrenzyJewelUnc: {
-		DisplayName: Augment Jewel: Frenzy (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Frenzy}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -916,7 +984,7 @@ Items: {
 	}
 
 	HeartsurgeJewelBas: {
-		DisplayName: Augment Jewel: Heartsurge (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Heartsurge}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -925,7 +993,7 @@ Items: {
 	}
 
 	HeartsurgeJewelEpi: {
-		DisplayName: Augment Jewel: Heartsurge (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Heartsurge}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -934,7 +1002,7 @@ Items: {
 	}
 
 	HeartsurgeJewelRar: {
-		DisplayName: Augment Jewel: Heartsurge (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Heartsurge}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -943,7 +1011,7 @@ Items: {
 	}
 
 	HeartsurgeJewelUlt: {
-		DisplayName: Augment Jewel: Heartsurge (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Heartsurge}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -952,7 +1020,7 @@ Items: {
 	}
 
 	HeartsurgeJewelUnc: {
-		DisplayName: Augment Jewel: Heartsurge (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Heartsurge}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -961,7 +1029,7 @@ Items: {
 	}
 
 	IgniteJewelBas: {
-		DisplayName: Augment Jewel: Ignite (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Ignite}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -970,7 +1038,7 @@ Items: {
 	}
 
 	IgniteJewelEpi: {
-		DisplayName: Augment Jewel: Ignite (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Ignite}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -979,7 +1047,7 @@ Items: {
 	}
 
 	IgniteJewelRar: {
-		DisplayName: Augment Jewel: Ignite (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Ignite}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -988,7 +1056,7 @@ Items: {
 	}
 
 	IgniteJewelUlt: {
-		DisplayName: Augment Jewel: Ignite (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Ignite}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -997,7 +1065,7 @@ Items: {
 	}
 
 	IgniteJewelUnc: {
-		DisplayName: Augment Jewel: Ignite (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Ignite}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1006,7 +1074,7 @@ Items: {
 	}
 
 	OverflowJewelBas: {
-		DisplayName: Augment Jewel: Overflow (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Overflow}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1015,7 +1083,7 @@ Items: {
 	}
 
 	OverflowJewelEpi: {
-		DisplayName: Augment Jewel: Overflow (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Overflow}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1024,7 +1092,7 @@ Items: {
 	}
 
 	OverflowJewelRar: {
-		DisplayName: Augment Jewel: Overflow (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Overflow}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1033,7 +1101,7 @@ Items: {
 	}
 
 	OverflowJewelUlt: {
-		DisplayName: Augment Jewel: Overflow (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Overflow}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1042,7 +1110,7 @@ Items: {
 	}
 
 	OverflowJewelUnc: {
-		DisplayName: Augment Jewel: Overflow (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Overflow}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1051,7 +1119,7 @@ Items: {
 	}
 
 	PrecisionJewelBas: {
-		DisplayName: Augment Jewel: Precision (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Precision}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1061,7 +1129,7 @@ Items: {
 	}
 
 	PrecisionJewelEpi: {
-		DisplayName: Augment Jewel: Precision (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Precision}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1071,7 +1139,7 @@ Items: {
 	}
 
 	PrecisionJewelRar: {
-		DisplayName: Augment Jewel: Precision (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Precision}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1081,7 +1149,7 @@ Items: {
 	}
 
 	PrecisionJewelUlt: {
-		DisplayName: Augment Jewel: Precision (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Precision}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1091,7 +1159,7 @@ Items: {
 	}
 
 	PrecisionJewelUnc: {
-		DisplayName: Augment Jewel: Precision (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Precision}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1101,7 +1169,7 @@ Items: {
 	}
 
 	RushJewelBas: {
-		DisplayName: Augment Jewel: Rush (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Rush}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1111,7 +1179,7 @@ Items: {
 	}
 
 	RushJewelEpi: {
-		DisplayName: Augment Jewel: Rush (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Rush}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1121,7 +1189,7 @@ Items: {
 	}
 
 	RushJewelRar: {
-		DisplayName: Augment Jewel: Rush (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Rush}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1131,7 +1199,7 @@ Items: {
 	}
 
 	RushJewelUlt: {
-		DisplayName: Augment Jewel: Rush (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Rush}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1141,7 +1209,7 @@ Items: {
 	}
 
 	RushJewelUnc: {
-		DisplayName: Augment Jewel: Rush (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Rush}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1151,7 +1219,7 @@ Items: {
 	}
 
 	TaintJewelBas: {
-		DisplayName: Augment Jewel: Taint (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Taint}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1160,7 +1228,7 @@ Items: {
 	}
 
 	TaintJewelEpi: {
-		DisplayName: Augment Jewel: Taint (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Taint}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1169,7 +1237,7 @@ Items: {
 	}
 
 	TaintJewelRar: {
-		DisplayName: Augment Jewel: Taint (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Taint}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1178,7 +1246,7 @@ Items: {
 	}
 
 	TaintJewelUlt: {
-		DisplayName: Augment Jewel: Taint (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Taint}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1187,7 +1255,7 @@ Items: {
 	}
 
 	TaintJewelUnc: {
-		DisplayName: Augment Jewel: Taint (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Taint}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1196,7 +1264,7 @@ Items: {
 	}
 
 	TitanreachJewelBas: {
-		DisplayName: Augment Jewel: Titanreach (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Titanreach}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1206,7 +1274,7 @@ Items: {
 	}
 
 	TitanreachJewelEpi: {
-		DisplayName: Augment Jewel: Titanreach (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Titanreach}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1216,7 +1284,7 @@ Items: {
 	}
 
 	TitanreachJewelRar: {
-		DisplayName: Augment Jewel: Titanreach (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Titanreach}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1226,7 +1294,7 @@ Items: {
 	}
 
 	TitanreachJewelUlt: {
-		DisplayName: Augment Jewel: Titanreach (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Titanreach}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1236,7 +1304,7 @@ Items: {
 	}
 
 	TitanreachJewelUnc: {
-		DisplayName: Augment Jewel: Titanreach (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Titanreach}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1246,7 +1314,7 @@ Items: {
 	}
 
 	UnleashJewelBas: {
-		DisplayName: Augment Jewel: Unleash (Basic)
+		DisplayName: "{$Items.Jewel}{$Items.Unleash}{$Items.Basic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1256,7 +1324,7 @@ Items: {
 	}
 
 	UnleashJewelEpi: {
-		DisplayName: Augment Jewel: Unleash (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Unleash}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1266,7 +1334,7 @@ Items: {
 	}
 
 	UnleashJewelRar: {
-		DisplayName: Augment Jewel: Unleash (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Unleash}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1276,7 +1344,7 @@ Items: {
 	}
 
 	UnleashJewelUlt: {
-		DisplayName: Augment Jewel: Unleash (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Unleash}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1286,7 +1354,7 @@ Items: {
 	}
 
 	UnleashJewelUnc: {
-		DisplayName: Augment Jewel: Unleash (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Unleash}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1298,7 +1366,7 @@ Items: {
 	# Uncommon Aug Jewels
 	
 	DeathechoJewelRar: {
-		DisplayName: Augment Jewel: Deathecho (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Deathecho}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1307,7 +1375,7 @@ Items: {
 	}
 
 	DeathechoJewelEpi: {
-		DisplayName: Augment Jewel: Deathecho (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Deathecho}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1316,7 +1384,7 @@ Items: {
 	}
 
 	DeathechoJewelUlt: {
-		DisplayName: Augment Jewel: Deathecho (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Deathecho}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1325,7 +1393,7 @@ Items: {
 	}
 
 	DeathechoJewelUnc: {
-		DisplayName: Augment Jewel: Deathecho (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Deathecho}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1334,7 +1402,7 @@ Items: {
 	}
 
 	BarrageJewelUnc: {
-		DisplayName: Augment Jewel: Barrage (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Barrage}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1343,7 +1411,7 @@ Items: {
 	}
 
 	BarrageJewelUlt: {
-		DisplayName: Augment Jewel: Barrage (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Barrage}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1352,7 +1420,7 @@ Items: {
 	}
 
 	BarrageJewelRar: {
-		DisplayName: Augment Jewel: Barrage (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Barrage}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1361,7 +1429,7 @@ Items: {
 	}
 
 	BarrageJewelEpi: {
-		DisplayName: Augment Jewel: Barrage (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Barrage}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1370,7 +1438,7 @@ Items: {
 	}
 
 	DeathshroudJewelEpi: {
-		DisplayName: Augment Jewel: Deathshroud (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Deathshroud}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1379,7 +1447,7 @@ Items: {
 	}
 
 	DeathshroudJewelRar: {
-		DisplayName: Augment Jewel: Deathshroud (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Deathshroud}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1388,7 +1456,7 @@ Items: {
 	}
 
 	DeathshroudJewelUlt: {
-		DisplayName: Augment Jewel: Deathshroud (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Deathshroud}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1397,7 +1465,7 @@ Items: {
 	}
 
 	DeathshroudJewelUnc: {
-		DisplayName: Augment Jewel: Deathshroud (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Deathshroud}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1406,7 +1474,7 @@ Items: {
 	}
 
 	DiversionJewelEpi: {
-		DisplayName: Augment Jewel: Diversion (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Diversion}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1415,7 +1483,7 @@ Items: {
 	}
 
 	DiversionJewelRar: {
-		DisplayName: Augment Jewel: Diversion (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Diversion}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1424,7 +1492,7 @@ Items: {
 	}
 
 	DiversionJewelUlt: {
-		DisplayName: Augment Jewel: Diversion (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Diversion}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1433,7 +1501,7 @@ Items: {
 	}
 
 	DiversionJewelUnc: {
-		DisplayName: Augment Jewel: Diversion (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Diversion}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1442,7 +1510,7 @@ Items: {
 	}
 
 	LightweightJewelEpi: {
-		DisplayName: Augment Jewel: Lightweight (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Lightweight}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1451,7 +1519,7 @@ Items: {
 	}
 
 	LightweightJewelRar: {
-		DisplayName: Augment Jewel: Lightweight (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Lightweight}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1460,7 +1528,7 @@ Items: {
 	}
 
 	LightweightJewelUlt: {
-		DisplayName: Augment Jewel: Lightweight (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Lightweight}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1469,7 +1537,7 @@ Items: {
 	}
 
 	LightweightJewelUnc: {
-		DisplayName: Augment Jewel: Lightweight (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Lightweight}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1478,7 +1546,7 @@ Items: {
 	}
 
 	LuckJewelEpi: {
-		DisplayName: Augment Jewel: Luck (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Luck}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1487,7 +1555,7 @@ Items: {
 	}
 
 	LuckJewelRar: {
-		DisplayName: Augment Jewel: Luck (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Luck}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1496,7 +1564,7 @@ Items: {
 	}
 
 	LuckJewelUlt: {
-		DisplayName: Augment Jewel: Luck (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Luck}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1505,7 +1573,7 @@ Items: {
 	}
 
 	LuckJewelUnc: {
-		DisplayName: Augment Jewel: Luck (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Luck}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1514,7 +1582,7 @@ Items: {
 	}
 
 	MegastrikeJewelEpi: {
-		DisplayName: Augment Jewel: Megastrike (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Megastrike}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1525,7 +1593,7 @@ Items: {
 	}
 
 	MegastrikeJewelRar: {
-		DisplayName: Augment Jewel: Megastrike (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Megastrike}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1536,7 +1604,7 @@ Items: {
 	}
 
 	MegastrikeJewelUlt: {
-		DisplayName: Augment Jewel: Megastrike (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Megastrike}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1547,7 +1615,7 @@ Items: {
 	}
 
 	MegastrikeJewelUnc: {
-		DisplayName: Augment Jewel: Megastrike (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Megastrike}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1558,7 +1626,7 @@ Items: {
 	}
 
 	MinicritJewelEpi: {
-		DisplayName: Augment Jewel: Minicrit (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Minicrit}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1568,7 +1636,7 @@ Items: {
 	}
 
 	MinicritJewelRar: {
-		DisplayName: Augment Jewel: Minicrit (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Minicrit}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1578,7 +1646,7 @@ Items: {
 	}
 
 	MinicritJewelUlt: {
-		DisplayName: Augment Jewel: Minicrit (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Minicrit}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1588,7 +1656,7 @@ Items: {
 	}
 
 	MinicritJewelUnc: {
-		DisplayName: Augment Jewel: Minicrit (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Minicrit}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1598,7 +1666,7 @@ Items: {
 	}
 
 	PaincycleJewelEpi: {
-		DisplayName: Augment Jewel: Paincycle (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Paincycle}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1607,7 +1675,7 @@ Items: {
 	}
 
 	PaincycleJewelRar: {
-		DisplayName: Augment Jewel: Paincycle (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Paincycle}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1616,7 +1684,7 @@ Items: {
 	}
 
 	PaincycleJewelUlt: {
-		DisplayName: Augment Jewel: Paincycle (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Paincycle}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1625,7 +1693,7 @@ Items: {
 	}
 
 	PaincycleJewelUnc: {
-		DisplayName: Augment Jewel: Paincycle (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Paincycle}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1634,7 +1702,7 @@ Items: {
 	}
 
 	RendJewelEpi: {
-		DisplayName: Augment Jewel: Rend (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Rend}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1643,7 +1711,7 @@ Items: {
 	}
 
 	RendJewelRar: {
-		DisplayName: Augment Jewel: Rend (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Rend}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1652,7 +1720,7 @@ Items: {
 	}
 
 	RendJewelUlt: {
-		DisplayName: Augment Jewel: Rend (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Rend}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1661,7 +1729,7 @@ Items: {
 	}
 
 	RendJewelUnc: {
-		DisplayName: Augment Jewel: Rend (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Rend}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1670,7 +1738,7 @@ Items: {
 	}
 
 	RevitalizeJewelEpi: {
-		DisplayName: Augment Jewel: Revitalize (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Revitalize}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1679,7 +1747,7 @@ Items: {
 	}
 
 	RevitalizeJewelRar: {
-		DisplayName: Augment Jewel: Revitalize (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Revitalize}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1688,7 +1756,7 @@ Items: {
 	}
 
 	RevitalizeJewelUlt: {
-		DisplayName: Augment Jewel: Revitalize (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Revitalize}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1697,7 +1765,7 @@ Items: {
 	}
 
 	RevitalizeJewelUnc: {
-		DisplayName: Augment Jewel: Revitalize (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Revitalize}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1706,7 +1774,7 @@ Items: {
 	}
 
 	SiphonJewelEpi: {
-		DisplayName: Augment Jewel: Siphon (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Siphon}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1716,7 +1784,7 @@ Items: {
 	}
 
 	SiphonJewelRar: {
-		DisplayName: Augment Jewel: Siphon (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Siphon}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1726,7 +1794,7 @@ Items: {
 	}
 
 	SiphonJewelUlt: {
-		DisplayName: Augment Jewel: Siphon (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Siphon}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1736,7 +1804,7 @@ Items: {
 	}
 
 	SiphonJewelUnc: {
-		DisplayName: Augment Jewel: Siphon (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Siphon}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1746,7 +1814,7 @@ Items: {
 	}
 
 	SturdyJewelEpi: {
-		DisplayName: Augment Jewel: Sturdy (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Sturdy}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1755,7 +1823,7 @@ Items: {
 	}
 
 	SturdyJewelRar: {
-		DisplayName: Augment Jewel: Sturdy (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Sturdy}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1764,7 +1832,7 @@ Items: {
 	}
 
 	SturdyJewelUlt: {
-		DisplayName: Augment Jewel: Sturdy (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Sturdy}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1773,7 +1841,7 @@ Items: {
 	}
 
 	SturdyJewelUnc: {
-		DisplayName: Augment Jewel: Sturdy (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Sturdy}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1782,7 +1850,7 @@ Items: {
 	}
 
 	UpliftingJewelEpi: {
-		DisplayName: Augment Jewel: Uplifting (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Uplifting}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1791,7 +1859,7 @@ Items: {
 	}
 
 	UpliftingJewelRar: {
-		DisplayName: Augment Jewel: Uplifting (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Uplifting}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1800,7 +1868,7 @@ Items: {
 	}
 
 	UpliftingJewelUlt: {
-		DisplayName: Augment Jewel: Uplifting (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Uplifting}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1809,7 +1877,7 @@ Items: {
 	}
 
 	UpliftingJewelUnc: {
-		DisplayName: Augment Jewel: Uplifting (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Uplifting}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1818,7 +1886,7 @@ Items: {
 	}
 
 	WardJewelEpi: {
-		DisplayName: Augment Jewel: Ward (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Ward}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1827,7 +1895,7 @@ Items: {
 	}
 
 	WardJewelRar: {
-		DisplayName: Augment Jewel: Ward (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Ward}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1836,7 +1904,7 @@ Items: {
 	}
 
 	WardJewelUlt: {
-		DisplayName: Augment Jewel: Ward (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Ward}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1845,7 +1913,7 @@ Items: {
 	}
 
 	WardJewelUnc: {
-		DisplayName: Augment Jewel: Ward (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Ward}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1854,7 +1922,7 @@ Items: {
 	}
 
 	WildstrikeJewelEpi: {
-		DisplayName: Augment Jewel: Wildstrike (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Wildstrike}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1865,7 +1933,7 @@ Items: {
 	}
 
 	WildstrikeJewelRar: {
-		DisplayName: Augment Jewel: Wildstrike (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Wildstrike}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1876,7 +1944,7 @@ Items: {
 	}
 
 	WildstrikeJewelUlt: {
-		DisplayName: Augment Jewel: Wildstrike (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Wildstrike}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1887,7 +1955,7 @@ Items: {
 	}
 
 	WildstrikeJewelUnc: {
-		DisplayName: Augment Jewel: Wildstrike (Uncommon)
+		DisplayName: "{$Items.Jewel}{$Items.Wildstrike}{$Items.Uncommon}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1900,7 +1968,7 @@ Items: {
 	# Rare Aug Jewels
 	
 	BlastJewelEpi: {
-		DisplayName: Augment Jewel: Blast (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Blast}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1909,7 +1977,7 @@ Items: {
 	}
 
 	BlastJewelUlt: {
-		DisplayName: Augment Jewel: Blast (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Blast}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1918,7 +1986,7 @@ Items: {
 	}
 
 	BreakerJewelEpi: {
-		DisplayName: Augment Jewel: Breaker (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Breaker}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1927,7 +1995,7 @@ Items: {
 	}
 
 	BreakerJewelRar: {
-		DisplayName: Augment Jewel: Breaker (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Breaker}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1936,7 +2004,7 @@ Items: {
 	}
 
 	BreakerJewelUlt: {
-		DisplayName: Augment Jewel: Breaker (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Breaker}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1945,7 +2013,7 @@ Items: {
 	}
 
 	DeterminationJewelEpi: {
-		DisplayName: Augment Jewel: Determination (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Determination}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1955,7 +2023,7 @@ Items: {
 	}
 
 	DeterminationJewelRar: {
-		DisplayName: Augment Jewel: Determination (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Determination}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1965,7 +2033,7 @@ Items: {
 	}
 
 	DeterminationJewelUlt: {
-		DisplayName: Augment Jewel: Determination (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Determination}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1975,7 +2043,7 @@ Items: {
 	}
 
 	HypercritJewelEpi: {
-		DisplayName: Augment Jewel: Hypercrit (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Hypercrit}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1985,7 +2053,7 @@ Items: {
 	}
 
 	HypercritJewelRar: {
-		DisplayName: Augment Jewel: Hypercrit (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Hypercrit}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -1995,7 +2063,7 @@ Items: {
 	}
 
 	HypercritJewelUlt: {
-		DisplayName: Augment Jewel: Hypercrit (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Hypercrit}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2005,7 +2073,7 @@ Items: {
 	}
 
 	KingslayerJewelEpi: {
-		DisplayName: Augment Jewel: Kingslayer (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Kingslayer}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2014,7 +2082,7 @@ Items: {
 	}
 
 	KingslayerJewelRar: {
-		DisplayName: Augment Jewel: Kingslayer (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Kingslayer}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2023,7 +2091,7 @@ Items: {
 	}
 
 	KingslayerJewelUlt: {
-		DisplayName: Augment Jewel: Kingslayer (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Kingslayer}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2032,7 +2100,7 @@ Items: {
 	}
 
 	OverdriveJewelEpi: {
-		DisplayName: Augment Jewel: Overdrive (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Overdrive}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2042,7 +2110,7 @@ Items: {
 	}
 
 	OverdriveJewelRar: {
-		DisplayName: Augment Jewel: Overdrive (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Overdrive}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2052,7 +2120,7 @@ Items: {
 	}
 
 	OverdriveJewelUlt: {
-		DisplayName: Augment Jewel: Overdrive (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Overdrive}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2062,7 +2130,7 @@ Items: {
 	}
 
 	RallyJewelEpi: {
-		DisplayName: Augment Jewel: Rally (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Rally}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2072,7 +2140,7 @@ Items: {
 	}
 
 	RallyJewelRar: {
-		DisplayName: Augment Jewel: Rally (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Rally}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2082,7 +2150,7 @@ Items: {
 	}
 
 	RallyJewelUlt: {
-		DisplayName: Augment Jewel: Rally (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Rally}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2092,7 +2160,7 @@ Items: {
 	}
 
 	ReapingJewelEpi: {
-		DisplayName: Augment Jewel: Reaping (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Reaping}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2101,7 +2169,7 @@ Items: {
 	}
 
 	ReapingJewelRar: {
-		DisplayName: Augment Jewel: Reaping (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Reaping}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2110,7 +2178,7 @@ Items: {
 	}
 
 	ReapingJewelUlt: {
-		DisplayName: Augment Jewel: Reaping (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Reaping}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2119,7 +2187,7 @@ Items: {
 	}
 
 	SuperluckJewelEpi: {
-		DisplayName: Augment Jewel: Superluck (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Superluck}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2128,7 +2196,7 @@ Items: {
 	}
 
 	SuperluckJewelRar: {
-		DisplayName: Augment Jewel: Superluck (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Superluck}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2137,7 +2205,7 @@ Items: {
 	}
 
 	SuperluckJewelUlt: {
-		DisplayName: Augment Jewel: Superluck (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Superluck}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2146,7 +2214,7 @@ Items: {
 	}
 
 	UltracutterJewelEpi: {
-		DisplayName: Augment Jewel: Ultracutter (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Ultracutter}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2156,7 +2224,7 @@ Items: {
 	}
 
 	UltracutterJewelRar: {
-		DisplayName: Augment Jewel: Ultracutter (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Ultracutter}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2166,7 +2234,7 @@ Items: {
 	}
 
 	UltracutterJewelUlt: {
-		DisplayName: Augment Jewel: Ultracutter (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Ultracutter}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2176,7 +2244,7 @@ Items: {
 	}
 
 	UnstableJewelEpi: {
-		DisplayName: Augment Jewel: Unstable (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Unstable}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2186,7 +2254,7 @@ Items: {
 	}
 
 	UnstableJewelRar: {
-		DisplayName: Augment Jewel: Unstable (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Unstable}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2196,7 +2264,7 @@ Items: {
 	}
 
 	UnstableJewelUlt: {
-		DisplayName: Augment Jewel: Unstable (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Unstable}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2206,7 +2274,7 @@ Items: {
 	}
 
 	VigorJewelEpi: {
-		DisplayName: Augment Jewel: Vigor (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Vigor}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2216,7 +2284,7 @@ Items: {
 	}
 
 	VigorJewelRar: {
-		DisplayName: Augment Jewel: Vigor (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Vigor}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2226,7 +2294,7 @@ Items: {
 	}
 
 	VigorJewelUlt: {
-		DisplayName: Augment Jewel: Vigor (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Vigor}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2238,7 +2306,7 @@ Items: {
 	# Epic Aug Jewels
 	
 	CollateralJewelEpi: {
-		DisplayName: Augment Jewel: Collateral (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Collateral}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2247,7 +2315,7 @@ Items: {
 	}
 
 	CollateralJewelUlt: {
-		DisplayName: Augment Jewel: Collateral (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Collateral}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2256,7 +2324,7 @@ Items: {
 	}
 
 	CommittedJewelEpi: {
-		DisplayName: Augment Jewel: Committed (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Committed}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2266,7 +2334,7 @@ Items: {
 	}
 
 	CommittedJewelUlt: {
-		DisplayName: Augment Jewel: Committed (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Committed}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2276,7 +2344,7 @@ Items: {
 	}
 
 	LifeleechJewelEpi: {
-		DisplayName: Augment Jewel: Lifeleech (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Lifeleech}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2285,7 +2353,7 @@ Items: {
 	}
 
 	LifeleechJewelUlt: {
-		DisplayName: Augment Jewel: Lifeleech (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Lifeleech}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2294,7 +2362,7 @@ Items: {
 	}
 
 	MomentumJewelEpi: {
-		DisplayName: Augment Jewel: Momentum (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Momentum}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2305,7 +2373,7 @@ Items: {
 	}
 
 	MomentumJewelUlt: {
-		DisplayName: Augment Jewel: Momentum (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Momentum}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2316,7 +2384,7 @@ Items: {
 	}
 
 	RadianceJewelEpi: {
-		DisplayName: Augment Jewel: Radiance (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Radiance}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2325,7 +2393,7 @@ Items: {
 	}
 
 	RadianceJewelUlt: {
-		DisplayName: Augment Jewel: Radiance (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Radiance}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2334,7 +2402,7 @@ Items: {
 	}
 
 	RelentlessJewelRar: {
-		DisplayName: Augment Jewel: Relentless (Rare)
+		DisplayName: "{$Items.Jewel}{$Items.Relentless}{$Items.Rare}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2343,7 +2411,7 @@ Items: {
 	}
 
 	RelentlessJewelEpi: {
-		DisplayName: Augment Jewel: Relentless (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Relentless}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2352,7 +2420,7 @@ Items: {
 	}
 
 	RelentlessJewelUlt: {
-		DisplayName: Augment Jewel: Relentless (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Relentless}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2361,7 +2429,7 @@ Items: {
 	}
 
 	SuperchargeJewelEpi: {
-		DisplayName: Augment Jewel: Supercharge (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Supercharge}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2371,7 +2439,7 @@ Items: {
 	}
 
 	SuperchargeJewelUlt: {
-		DisplayName: Augment Jewel: Supercharge (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Supercharge}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2381,7 +2449,7 @@ Items: {
 	}
 
 	VoidicJewelEpi: {
-		DisplayName: Augment Jewel: Voidic (Epic)
+		DisplayName: "{$Items.Jewel}{$Items.Voidic}{$Items.Epic}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2390,7 +2458,7 @@ Items: {
 	}
 
 	VoidicJewelUlt: {
-		DisplayName: Augment Jewel: Voidic (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Voidic}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2399,7 +2467,7 @@ Items: {
 	}
 
 	RunicJewelUlt: {
-		DisplayName: Augment Jewel: Runic (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Runic}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2409,7 +2477,7 @@ Items: {
 	}
 
 	ResurgenceJewelUlt: {
-		DisplayName: Augment Jewel: Resurgence (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Resurgence}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2418,7 +2486,7 @@ Items: {
 	}
 
 	PowertheftJewelUlt: {
-		DisplayName: Augment Jewel: Powertheft (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Powertheft}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2428,7 +2496,7 @@ Items: {
 	}
 
 	ExecutionJewelUlt: {
-		DisplayName: Augment Jewel: Execution (Ultimate)
+		DisplayName: "{$Items.Jewel}{$Items.Execution}{$Items.Ultimate}"
 		Tooltip:
 			'''
 			{$CommonItemTooltip.AugJewelMain}
@@ -2531,7 +2599,7 @@ Configs: {
 
 Buffs: {
 	RendEpi: {
-		DisplayName: Rend (Epic)
+		DisplayName: "{$Items.Rend}{$Items.Epic}"
 		Description: Enemy defense reduced
 	}
 
@@ -2561,17 +2629,17 @@ Buffs: {
 	}
 
 	RendRar: {
-		DisplayName: Rend (Rare)
+		DisplayName: "{$Items.Rend}{$Items.Rare}"
 		Description: Enemy defense reduced
 	}
 
 	RendUlt: {
-		DisplayName: Rend (Ultimate)
+		DisplayName: "{$Items.Rend}{$Items.Ultimate}"
 		Description: Enemy defense reduced
 	}
 
 	RendUnc: {
-		DisplayName: Rend (Uncommon)
+		DisplayName: "{$Items.Rend}{$Items.Uncommon}"
 		Description: Enemy defense reduced
 	}
 
@@ -2652,17 +2720,17 @@ Buffs: {
 
 	RallyUlt: {
 		Description: The enemy is taking more damage from summons
-		DisplayName: Rally (Ultimate)
+		DisplayName: "{$Items.Rally}{$Items.Ultimate}"
 	}
 
 	RallyRar: {
 		Description: The enemy is taking more damage from summons
-		DisplayName: Rally (Rare)
+		DisplayName: "{$Items.Rally}{$Items.Rare}"
 	}
 
 	RallyEpi: {
 		Description: The enemy is taking more damage from summons
-		DisplayName: Rally (Epic)
+		DisplayName: "{$Items.Rally}{$Items.Epic}"
 	}
 }
 

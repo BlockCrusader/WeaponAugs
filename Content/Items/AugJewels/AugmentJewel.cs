@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using WeaponAugs.Common;
 
@@ -58,7 +59,7 @@ namespace WeaponAugs.Content.Items.AugJewels
 				if (CanRightClick())
 				{
 					Color textColor = GetRarityColor(heldItem);
-					tooltips.Add(new TooltipLine(Mod, "EffectTarget", "Selected gear: " +
+					tooltips.Add(new TooltipLine(Mod, "EffectTarget", Language.GetTextValue("Mods.WeaponAugs.CommonItemTooltip.Selected") +
 								$"{heldItem.HoverName}")
 					{ OverrideColor = textColor });
 				}
