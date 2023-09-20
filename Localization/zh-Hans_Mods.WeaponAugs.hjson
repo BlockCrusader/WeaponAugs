@@ -2512,7 +2512,7 @@ Items: {
 
 Configs: {
 	ConfigServer: {
-		DisplayName: 高级设置
+		DisplayName: 武器附魔高级设置
 
 		AugmentLimit: {
 			Label: 附魔次数限制
@@ -2583,7 +2583,7 @@ Configs: {
 	}
 
 	ConfigClient: {
-		DisplayName: 基础设置
+		DisplayName: 武器附魔基础设置
 
 		AugmentDust: {
 			Label: 附魔武器粒子
