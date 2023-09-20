@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelBas"; 
-		private string AugTitle => "Conservation (Basic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Conservation") + Language.GetTextValue("Mods.WeaponAugs.Items.Basic");
 		private string AugTooltipValue => $"{AugPowerArchive.ConservationBas}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -39,7 +39,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUnc"; 
-		private string AugTitle => "Conservation (Uncommon)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Conservation") + Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 		private string AugTooltipValue => $"{AugPowerArchive.ConservationUnc}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -61,7 +61,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Conservation (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Conservation") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		private string AugTooltipValue => $"{AugPowerArchive.ConservationRar}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -83,7 +83,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Conservation (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Conservation") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.ConservationEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -105,7 +105,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Conservation (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Conservation") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.ConservationUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

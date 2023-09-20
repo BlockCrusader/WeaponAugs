@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Epic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Radiance (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Radiance") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.RadianceEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -38,7 +38,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Epic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Radiance (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Radiance") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.RadianceUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

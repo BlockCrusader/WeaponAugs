@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelBas"; 
-		private string AugTitle => "Taint (Basic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Taint") + Language.GetTextValue("Mods.WeaponAugs.Items.Basic");
 		private string AugTooltipValue => $"{AugPowerArchive.TaintBas}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -39,7 +39,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUnc"; 
-		private string AugTitle => "Taint (Uncommon)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Taint") + Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 		private string AugTooltipValue => $"{AugPowerArchive.TaintUnc}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -61,7 +61,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Taint (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Taint") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		private string AugTooltipValue => $"{AugPowerArchive.TaintRar}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -83,7 +83,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Taint (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Taint") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.TaintEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -105,7 +105,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Taint (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Taint") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.TaintUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

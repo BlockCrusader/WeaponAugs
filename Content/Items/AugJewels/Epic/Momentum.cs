@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Epic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Momentum (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Momentum") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.MomentumEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -38,7 +38,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Epic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Momentum (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Momentum") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.MomentumUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

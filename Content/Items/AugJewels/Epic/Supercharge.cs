@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Epic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Supercharge (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Collateral") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.SuperchargeEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -38,7 +38,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Epic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Supercharge (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Collateral") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.SuperchargeUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

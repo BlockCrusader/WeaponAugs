@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Rare
 
 
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Relentless (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Relentless") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		private string AugTooltipValue => $"{AugPowerArchive.RelentlessRar}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -38,7 +38,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Rare
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Relentless (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Relentless") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.RelentlessEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -60,7 +60,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Rare
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Relentless (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Relentless") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.RelentlessUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

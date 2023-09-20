@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelBas"; 
-		private string AugTitle => "Armorbane (Basic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Armorbane") + Language.GetTextValue("Mods.WeaponAugs.Items.Basic");
 		private string AugTooltipValue => $"{AugPowerArchive.ArmorbaneBas}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -39,7 +39,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUnc"; 
-		private string AugTitle => "Armorbane (Uncommon)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Armorbane") + Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 		private string AugTooltipValue => $"{AugPowerArchive.ArmorbaneUnc}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -61,7 +61,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Armorbane (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Armorbane") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		private string AugTooltipValue => $"{AugPowerArchive.ArmorbaneRar}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -83,7 +83,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Armorbane (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Armorbane") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.ArmorbaneEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -105,7 +105,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Armorbane (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Armorbane") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.ArmorbaneUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

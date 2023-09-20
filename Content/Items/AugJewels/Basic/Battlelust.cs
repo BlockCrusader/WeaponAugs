@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelBas"; 
-		private string AugTitle => "Battlelust (Basic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Battlelust") + Language.GetTextValue("Mods.WeaponAugs.Items.Basic");
 		private string AugTooltipValue => $"{AugPowerArchive.BattlelustBas}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -39,7 +39,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUnc"; 
-		private string AugTitle => "Battlelust (Uncommon)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Battlelust") + Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 		private string AugTooltipValue => $"{AugPowerArchive.BattlelustUnc}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -61,7 +61,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Battlelust (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Battlelust") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		private string AugTooltipValue => $"{AugPowerArchive.BattlelustRar}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -83,7 +83,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Battlelust (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Battlelust") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.BattlelustEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -105,7 +105,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Battlelust (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Battlelust") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.BattlelustUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

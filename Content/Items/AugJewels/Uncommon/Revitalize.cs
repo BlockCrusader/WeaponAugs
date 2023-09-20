@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Uncommon
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUnc"; 
-		private string AugTitle => "Revitalize (Uncommon)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Revitalize") + Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 		private string AugTooltipValue => $"{AugPowerArchive.RevitalizeUnc}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -38,7 +38,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Uncommon
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Revitalize (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Revitalize") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		private string AugTooltipValue => $"{AugPowerArchive.RevitalizeRar}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -60,7 +60,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Uncommon
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Revitalize (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Revitalize") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		private string AugTooltipValue => $"{AugPowerArchive.RevitalizeEpi}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 
@@ -82,7 +82,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Uncommon
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Revitalize (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Revitalize") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		private string AugTooltipValue => $"{AugPowerArchive.RevitalizeUlt}";
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
 

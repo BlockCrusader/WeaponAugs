@@ -13,7 +13,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelBas";
-		private string AugTitle => "Ignite (Basic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Ignite") + Language.GetTextValue("Mods.WeaponAugs.Items.Basic");
 		// private string AugTooltipValue => $"{AugPowerArchive.IgniteBas}";
 		private string AugTooltipValue => Language.GetTextValue("BuffName.OnFire");
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
@@ -40,7 +40,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUnc"; 
-		private string AugTitle => "Ignite (Uncommon)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Ignite") + Language.GetTextValue("Mods.WeaponAugs.Items.Uncommon");
 		// private string AugTooltipValue => $"{AugPowerArchive.IgniteUnc}";
 		private string AugTooltipValue => Language.GetTextValue("BuffName.Frostburn");
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
@@ -63,7 +63,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelRar";
-		private string AugTitle => "Ignite (Rare)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Ignite") + Language.GetTextValue("Mods.WeaponAugs.Items.Rare");
 		// private string AugTooltipValue => $"{AugPowerArchive.IgniteRar}";
 		private string AugTooltipValue => Language.GetTextValue("BuffName.Shadowflame");
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
@@ -86,7 +86,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelEpi";
-		private string AugTitle => "Ignite (Epic)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Ignite") + Language.GetTextValue("Mods.WeaponAugs.Items.Epic");
 		// private string AugTooltipValue => $"{AugPowerArchive.IgniteEpi}";
 		private string AugTooltipValue => Language.GetTextValue("BuffName.CursedInferno");
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
@@ -109,7 +109,7 @@ namespace WeaponAugs.Content.Items.AugJewels.Basic
 
 		
 		public override string Texture => "WeaponAugs/Content/Items/AugJewels/AugJewelUlt";
-		private string AugTitle => "Ignite (Ultimate)";
+		private string AugTitle => Language.GetTextValue("Mods.WeaponAugs.Items.Ignite") + Language.GetTextValue("Mods.WeaponAugs.Items.Ultimate");
 		// private string AugTooltipValue => $"{AugPowerArchive.IgniteUlt}";
 		private string AugTooltipValue => Language.GetTextValue("Mods.WeaponAugs.Buffs.RunicBlaze.DisplayName");
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AugTitle, AugTooltipValue);
